@@ -12,13 +12,18 @@ import org.springframework.web.servlet.ModelAndView;
 public class NotionController {
 
     @RequestMapping(value = "/result", method = RequestMethod.GET)
-    public String createOfferPage(Model model) {
+    public String getResultAfterParse(Model model) {
         return "/result";
     }
 
     @RequestMapping(value = "/parse", method = RequestMethod.POST)
-    public ModelAndView createOffer() {
+    public ModelAndView parse() {
         return new ModelAndView("/parse");
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String getNotionMenu(Model model) {
+        return "/result";
     }
 }
 
