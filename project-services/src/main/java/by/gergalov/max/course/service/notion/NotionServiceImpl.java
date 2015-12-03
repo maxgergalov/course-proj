@@ -7,6 +7,7 @@ public class NotionServiceImpl implements NotionService {
 
     @Override
     public void parse() {
+        /*your solution*/
     }
 
 }
