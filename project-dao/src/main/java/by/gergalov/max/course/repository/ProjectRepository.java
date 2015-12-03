@@ -1,0 +1,11 @@
+package by.gergalov.max.course.repository;
+
+import by.gergalov.max.course.entity.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface ProjectRepository extends JpaRepository<Project, Long> {
+
+}
